@@ -28,5 +28,3 @@ btn.addEventListener("click",(e)=>{
   }
    
 })
-
-
