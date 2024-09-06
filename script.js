@@ -15,7 +15,7 @@ btn.addEventListener("click",(e)=>{
     }
     localStorage.setItem("userdata",JSON.stringify(userdata));
     
-    alert("Logged in as")
+    alert("Logged in as "+userinput.value)
    }
    if(existing){
     let btn2=document.createElement("button");
@@ -23,11 +23,10 @@ btn.addEventListener("click",(e)=>{
     btn2.innerText="Login as existing user.";
     document.body.appendChild(btn2)
     btn2.addEventListener("click",()=>{
-       alert("Logged in as" )
+       alert("Logged in as "+JSON.parse(localStorage.getItem("userdata")).username)
     })
   }
    
 })
-
 
 
